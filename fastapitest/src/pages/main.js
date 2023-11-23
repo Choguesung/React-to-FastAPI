@@ -15,6 +15,8 @@ function MyComponent() {
     });
   }, []);
 
+  console.log(data)
+
   const handleCreatePost = async () => {
     try {
       // 요청 바디에 데이터를 담아 POST 요청 보내기
