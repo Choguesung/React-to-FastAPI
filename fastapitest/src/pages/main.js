@@ -10,7 +10,7 @@ function MyComponent() {
 
   useEffect(() => {
     // 외부 서버에서 선수 데이터를 가져오는 부분입니다.
-    axios.get('http://13.125.150.153/title').then((response) => {
+    axios.get('http://43.201.104.0/title').then((response) => {
       setData(response.data); // 선수 데이터를 상태에 저장
     });
   }, []);
@@ -18,7 +18,7 @@ function MyComponent() {
   const handleCreatePost = async () => {
     try {
       // 요청 바디에 데이터를 담아 POST 요청 보내기
-      const response = await axios.post('http://13.125.150.153/post', {
+      const response = await axios.post('http://43.201.104.0/post', {
         title: title,
         content: content,
       });
